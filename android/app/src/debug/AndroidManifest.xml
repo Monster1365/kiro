@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 디버그 빌드에서만 로컬 개발 서버(HTTP) 허용. release 는 HTTPS 만 허용 -->
+    <application android:networkSecurityConfig="@xml/network_security_config" />
+</manifest>

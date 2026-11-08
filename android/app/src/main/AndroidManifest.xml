@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!--
+        RECEIVE_SMS / READ_SMS 는 의도적으로 선언하지 않는다.
+        자동 수신 분석은 Google Play SMS 권한 정책 및 기술 검증 전까지 기본 기능이 아니다.
+        (docs/SMS_ACCESS_REVIEW.md 참고)
+    -->
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:label="스미싱 예방"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmishingGuard">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

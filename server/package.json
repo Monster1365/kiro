@@ -1,0 +1,12 @@
+{
+  "name": "smishing-guard-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "스미싱 예방 앱 MVP 백엔드 (분석 / 보호자 인증 / 보호자 알림)",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/"
+  },
+  "engines": { "node": ">=20" }
+}
